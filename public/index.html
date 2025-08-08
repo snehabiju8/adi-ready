@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adi ready - Kerala Mosquito Detection System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">
+                <span class="malayalam">അടി</span> 
+                <span class="ready">ready</span>
+            </h1>
+            <p class="subtitle">Mosquito Simulator, cuz why not</p>
+        </header>
+
+        <main class="content">
+            <div class="left-column">
+                <div class="mosquito-container">
+                    <img src="Mosquitoo.jpg" 
+                         alt="Mosquito" class="mosquito-img" id="mosquitoImg">
+                    <div class="speech-bubble" id="speechBubble">
+                        <p id="mosquitoQuote">Loading mosquito wisdom...</p>
+                    </div>
+                    <div class="reaction-time" id="reactionDisplay">⚡ Reaction: -- ms</div>
+                </div>
+            </div>
+        
+
+            <div class="right-column">
+                <div class="detection-system">
+                    <div class="detector-display">
+                        <div class="radar-circle">
+                            <div class="radar-sweep"></div>
+                            <div class="radar-dot"></div>
+                        </div>
+                        <div class="status-text" id="statusText">
+                            System Ready
+                        </div>
+                    </div>
+
+                    <button class="detect-btn" id="detectBtn" onclick="startDetection()">
+                        🔍 Detect Buzz
+                    </button>
+
+                    <div class="result-area" id="resultArea" style="display: none;">
+                        <button class="smash-btn" id="smashBtn" onclick="smashMosquito()" style="display: none;">
+                            💥 SMASH!
+                        </button>
+                        <div class="escape-text" id="escapeText" style="display: none;">
+                            <p>Too late, it escaped! 🦟💨</p>
+                            <p class="escape-subtitle">It's probably hiding behind your laptop screen...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+        </main>
+
+        <footer>
+            <p>Powered by the Kerala Mosquito Research Society 🦟 (Not Real)</p>
+            <p class="tech-credit">Built with ❤️ and frustration from mosquito bites</p>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

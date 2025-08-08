@@ -1,0 +1,17 @@
+{
+  "name": "adi-ready",
+  "version": "1.0.0",
+  "description": "Kerala Mosquito Detection System - A fun hackathon demo app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"No tests yet, but mosquitoes are definitely real!\" && exit 0"
+  },
+  "keywords": ["mosquito", "kerala", "hackathon", "fun", "detection"],
+  "author": "Kerala Mosquito Research Society",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest"
+  }
+}
